@@ -1,0 +1,88 @@
+/* Общие стили для шапки и хедера */
+header {
+    background-color: #6a8e23c7;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Geometria";
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+.catalog-title {
+    font-size: 24px;
+    text-align: center;
+}
+
+nav {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Стили для основного контента */
+main {
+    padding: 20px;
+}
+
+
+
+/* Стили для сайдбара */
+.sidebar-content {
+    display: flex;
+    flex-direction: column; /* Меняем направление на вертикальное */
+    align-items: center; /* Выравниваем элементы по центру */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    max-width: 40%; /* Увеличиваем ширину картинки */
+    height: auto;
+    float: left; /* Выравниваем картинку слева */
+    margin-right: 20px; /* Добавляем отступ справа от текста */
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.5; /* Устанавливаем межстрочный интервал */
+}
+
+/* Стили для футера */
+footer {
+    background-color: #6a8e23c7;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+

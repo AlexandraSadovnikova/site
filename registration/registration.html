@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Регистрация</title>
+    <link rel="stylesheet" type="text/css" href="/registration/reg.css">
+</head>
+<body>
+    <div class="registration-container">
+        <h2>Регистрация пользователя в системе</h2>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required pattern="[а-яА-Я\s-]+">
+                <span class="error-message" id="nameError"></span>
+            </div>
+            <div class="form-group">
+                <label for="surname">Фамилия:</label>
+                <input type="text" id="surname" name="surname" required pattern="[а-яА-Я\s-]+">
+                <span class="error-message" id="surnameError"></span>
+            </div>
+            <div class="form-group">
+                <label for="patronymic">Отчество:</label>
+                <input type="text" id="patronymic" name="patronymic" pattern="[а-яА-Я\s-]+">
+                <span class="error-message" id="patronymicError"></span>
+            </div>
+            <div class="form-group">
+                <label for="login">Email:</label>
+                <input type="email" id="login" name="login" required>
+                <span class="error-message" id="loginError"></span>
+            </div>
+            <div class="form-group">
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required minlength="6">
+                <span class="error-message" id="passwordError"></span>
+            </div>
+            <div class="form-group">
+                <label for="password_repeat">Повторите пароль:</label>
+                <input type="password" id="password_repeat" name="password_repeat" required>
+                <span class="error-message" id="passwordRepeatError"></span>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="rules" name="rules" required>
+                <label for="rules">Я согласен с правилами регистрации</label>
+                <span class="error-message" id="rulesError"></span>
+            </div>
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+    </div>
+
+    <script src="reg.js"></script>
+</body>
+</html>
